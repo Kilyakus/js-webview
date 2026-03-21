@@ -1,0 +1,33 @@
+{
+	"name": "js-webview-private",
+	"version": "1.26.3",
+	"description": "High-performance UI window manager based on WinBox engine.",
+	"main": "js/webview.min.js",
+	"style": "css/webview.min.css",
+	"author": "Aleksandr Kilyakov (@Kilyakus)",
+	"contributors": [
+		"Thomas Wilkerling (Original Author)"
+	],
+	"license": "CC-BY-NC-4.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kilyakus/js-webview-private.git"
+	},
+	"scripts": {
+		"clean": "rimraf dist",
+		"copy:img": "cpx \"src/img/*.*\" dist/img/",
+		"minify:css": "cleancss -o dist/css/webview.min.css src/css/webview.css",
+		"obfuscate:js": "javascript-obfuscator ./src/js/webview.js --output ./dist/js/webview.min.js --config obfuscator.json",
+		"copy:pkg": "cpx \"package.json\" dist/ && cpx \"README.md\" dist/",
+		"build": "npm run clean && npm run copy:img && npm run minify:css && npm run obfuscate:js && npm run copy:pkg",
+		"deploy": "npm run build && gh-pages -d dist -r https://github.com/kilyakus/js-webview.git -b main"
+	},
+	"devDependencies": {
+		"clean-css-cli": "^5.6.3",
+		"cpx": "^1.5.0",
+		"gh-pages": "^6.1.1",
+		"javascript-obfuscator": "^4.1.1",
+		"rimraf": "^5.0.0",
+		"terser": "^5.31.1"
+	}
+}
