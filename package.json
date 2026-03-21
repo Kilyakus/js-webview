@@ -17,7 +17,7 @@
 		"clean": "rimraf dist",
 		"copy:img": "cpx \"src/img/*.*\" dist/img/",
 		"minify:css": "cleancss -o dist/css/webview.min.css src/css/webview.css",
-		"obfuscate:js": "javascript-obfuscator ./src/js/webview.js --output ./dist/js/webview.min.js --config obfuscator.json",
+		"obfuscate:js": "javascript-obfuscator ./src/js/webview.js --output ./dist/js/webview.min.js --config obfuscator.json && node -e \"const fs = require('fs'); const banner = fs.readFileSync('./src/js/webview.js', 'utf8').match(/\\/\\*\\*[\\s\\S]*?\\*\\//)[0]; const min = fs.readFileSync('./dist/js/webview.min.js', 'utf8'); fs.writeFileSync('./dist/js/webview.min.js', banner + '\\n' + min);\"",
 		"copy:pkg": "cpx \"package.json\" dist/ && cpx \"README.md\" dist/",
 		"build": "npm run clean && npm run copy:img && npm run minify:css && npm run obfuscate:js && npm run copy:pkg",
 		"deploy": "npm run build && gh-pages -d dist -r https://github.com/kilyakus/js-webview.git -b main"
