@@ -1,5 +1,5 @@
 {
-	"name": "js-webview",
+	"name": "@kilyakus/js-webview",
 	"version": "1.26.3",
 	"description": "High-performance UI window manager based on WinBox engine.",
 	"main": "js/webview.min.js",
@@ -11,6 +11,9 @@
 	"license": "CC-BY-NC-4.0",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/kilyakus/js-webview.git"
+		"url": "git+https://github.com/kilyakus/js-webview.git"
+	},
+	"publishConfig": {
+		"access": "public"
 	}
 }
