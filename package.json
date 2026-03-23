@@ -1,6 +1,6 @@
 {
 	"name": "@kilyakus/js-webview",
-	"version": "2.26.3",
+	"version": "3.26.3",
 	"description": "High-performance UI window manager based on WinBox engine.",
 	"main": "js/webview.min.js",
 	"style": "css/webview.min.css",
