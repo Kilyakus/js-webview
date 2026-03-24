@@ -1,7 +1,7 @@
 {
 	"name": "@kilyakus/js-webview",
-	"version": "13.26.3",
-	"description": "High-performance UI window manager based on WinBox engine.",
+	"version": "14.26.3",
+	"description": "High-performance UI Window Manager with Native Taskbar.",
 	"main": "js/webview.min.js",
 	"style": "css/webview.min.css",
 	"author": "Aleksandr Kilyakov (@Kilyakus)",
