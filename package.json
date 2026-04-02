@@ -1,6 +1,6 @@
 {
 	"name": "@kilyakus/js-webview",
-	"version": "28.26.4",
+	"version": "29.26.4",
 	"description": "High-performance UI Window Manager with Native Taskbar.",
 	"main": "js/webview.min.js",
 	"style": "css/webview.min.css",
