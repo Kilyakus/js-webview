@@ -1,0 +1,28 @@
+{
+	"name": "@kilyakus/js-webview",
+	"productName": "WebView",
+	"version": "60.26.6",
+	"description": "It acts as a high-performance UI window manager for web applications, providing advanced window state management, taskbar integration, context menu logic, an advanced resizing mechanism, and other interface positioning algorithms.",
+	"main": "js/webview.min.js",
+	"style": "css/webview.min.css",
+	"author": "Aleksandr Kilyakov",
+	"authorUsername": "Kilyakus",
+	"contributors": [
+		{
+			"name": "Thomas Wilkerling",
+			"url": "https://github.com/nextapps-de/winbox",
+			"info": "WinBox v0.2.82",
+			"originalLicense": "Apache License 2.0",
+			"originalLicenseUrl": "https://github.com/nextapps-de/winbox/blob/master/LICENSE"
+		}
+	],
+	"license": "CC-BY-NC-4.0",
+	"licenseLegal": "Attribution-NonCommercial 4.0 International",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kilyakus/@kilyakus/js-webview.git"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}
